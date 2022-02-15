@@ -5,93 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Sukma Giri Pratama</title>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--========== Icon ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--========== Font ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 align="center">
-        Hello!
-        <br/>
-        Saya Sukma Giri Pratama
-    </h1>
-    <hr>
-    <h3>
-        About Me
-    </h3>
-    <p>
-        Saya merupakan seorang mahasiswa Teknik Informatika di salah satu Universitas swasta Jakarta.
-        Saya memiliki minat dibidang teknologi dan design, sehingga saya mengikuti program yang diselenggarakan oleh eduwork
-        dan mengimbangi minat design saya dengan mengeksplorasi tentang dunia UI UX di waktu senggang.
-    </p>
-    <h3>
-        Riwayat Pendidikan
-    </h3>
-    <ul>
-        <li>SMK Negeri 28 Jakarta - Perawatan Sosial (2015 - 2018)</li>
-        <li>Universitas Muhammadiyah Prof. DR. HAMKA - S1 Teknik Informatika (2018 - Sekarang)</li>
-    </ul>
+        <section>
+            <nav class="navigasi">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <h3>
-        Skills
-    </h3>
-    <table border="1px" cellpadding ="15px">
-        <thead>
-            <tr>
-                <th>
-                    Skills
-                </th>
-                <th>
-                    Tools
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>
-                    Javascript
-                </th>
-                <th>
-                    Visual Studio Code
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    PHP
-                </th>
-                <th>
-                    Sublime Text
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    Wireframing & Prototyping
-                </th>
-                <th>
-                    Figma
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    Vector
-                </th>
-                <th>
-                    Photoshop & Illustrator
-                </th>
-            </tr>
-        </tbody>
-    </table>
-    <br>
+        <!--========== Home ==========-->
+        <section>
+            <table id="home__table" cellspacing="0" cellpadding="32">        
+                <tr>
+                    <td class="row1"></td>
+                    <td class="row2">   
+                    <img src="assets/img/picture.png" alt="" class="picture">
+                    </td>
+                    <td class="row3">
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Sukma Giri Pratama</h1>
+                        <h3 class="home__subtitle">UI UX Designer and Frontend Developer</h3>
+                        <p class="home__description">Junior experience in Frontend & Web Design as well as development 
+                            <br/>knowladge producing quality work.</p>
+                            <a href="#contact" class="home__buttons">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!--========== About Me ==========-->
+        <section id="about">
+            <h2 class="about-tittle">About Me</h2>
+            <p class="about-description">I am an Informatics Engineering student at a private university in Jakarta.
+                I have an interest in technology and design, so I join the program organized by eduwork
+                and keep up with my design interests by exploring the world of UI UX in my spare time.
+            </p>
+            
+            <div>
+                <h2 class="q-tittle">Qualification</h2>
+                <table class="q-table" cellspacing="32px" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th class="q-tittle1">Suku Dinas Sosial Jakarta Barat (2017)</th>
+                            <th></th>
+                            <th class="q-tittle2">Lembaga Penerbangan dan Antariksa Nasional (2021)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="q-desc1">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Velit aspernatur dolores deserunt, eaque harum, repellat doloremque obcaecati aliquam, 
+                                maxime saepe similique consequatur dolore iure officia laborum! Nostrum, harum. Ea, eveniet!
+                            </th>
+                            <th></th>
+                            <th class="q-desc2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Quas nulla ad officia laborum doloribus commodi cupiditate tempore dignissimos pariatur iusto. 
+                                Dolores modi accusantium libero qui cum porro alias dicta enim.
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <form action="">
-        <label for="">Name</label>
-        <input type="text" class="contact__input">
-        <br>
-        <label for="">Email</label>
-        <input type="email">
-        <br>
-        <label for="" >Message</label>
-        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-        <br>
-        <button type="button">Send Message</button>      
-    </form>
+        <!--========== Contact Me ==========-->
+        <section class="contact section" id="contact">
+            <h2 class="contact__title">Contact Me</h2>
 
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="contact_button">
+                            Send Message
+                        </button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--========== Footer ==========-->
+        <footer class="footer">
+            <p class="footer__copy">&#169; sukmagp. All right reserved</p>
+        </footer>
 </body>
 </html>
